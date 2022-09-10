@@ -47,17 +47,18 @@ button{
 }
 @media screen and (max-width:295px){
     .heading{
-        font-size:20px
+        font-size:30px;
     }
     .buttons{
-        width:90%
+        width:100%
+            
     }
     button{
     border-radius: 1px;
-    padding: 1px 2px;
+    padding: 2px 4px;
     margin :1px;
     width: 20%;
-    font-size: 5px;
+    font-size: 9px;
     
     }
     input{
