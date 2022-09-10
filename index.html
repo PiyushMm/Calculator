@@ -1,49 +1,48 @@
-<!DOCTYPE html>                                                                     
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home </title>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <nav> Calculator</nav>
-<table>
-    <tr>
-        <td colspan="3"><input type="text"  id="input"></td>
-        <td><input type="button" value="clr" id="clr" onclick="clearinput()"></td>
-        
-    </tr>
+</head>
 
-    <tr>
-        <td><input type="button" value="1" id="block1" onclick="display('1')"></td>
-        <td><input type="button" value="2" id="block2" onclick="display('2')"></td>
-        <td><input type="button" value="3" id="block3" onclick="display('3')"></td>
-        <td><input type="button" value="-" id="minus" onclick="display('-')"></td>
-    </tr>
+<body>
+    <h1 class="heading">Calculator</h1>
+    <div class="container">
+       
+        <div class="main">
+            
+            <br /><br />
+            <div class="buttons">
+                <input id="input" /><br>
+                <button id="block0" onclick="dis('0')">0</button>
+                <button id="block1" onclick="dis('1')">1</button>
+                <button id="block2" onclick="dis('2')">2</button>
+                <button id="plus" onclick="dis('+')">+</button><br>
+                <button id="block3" onclick="dis('3')">3</button>
+                <button id="block4" onclick="dis('4')">4</button>
+                <button id="block5" onclick="dis('5')">5</button>
+                <button id="minus" onclick="dis('-')">-</button> <br>
+                <button id="block6" onclick="dis('6')">6</button>
+                <button id="block7" onclick="dis('7')">7</button>
+                <button id="block8" onclick="dis('8')">8</button>
+                <button id="multiply" onclick="dis('*')">x</button><br>
+                <button id="block9" onclick="dis('9')">9</button>
+                <button id="dot" onclick="dis('.')">.</button>
+                <button id="clear" onclick="clr()">clr</button>
+                <button id="divide" onclick="dis('/')">/</button><br>
+                <br>
+                <button id="ans" onclick="solve()">Submit</button>
+                <button id="clr" onclick="clr()">Reset</button>
+            </div>
+        </div>
+    </div>
 
-    <tr>
-        <td><input type="button" value="4" id="block4" onclick="display('4')"></td>
-        <td><input type="button" value="5" id="block5" onclick="display('5')"></td>
-        <td><input type="button" value="6" id="block6" onclick="display('6')"></td>
-        <td><input type="button" value="+" id="plus" onclick="display('+')"></td>
-    </tr>
+    <script src="script.js"></script>
+</body>
+</div>
 
-    <tr>
-        <td><input type="button" value="7" id="block7" onclick="display('7')"></td>
-        <td><input type="button" value="8" id="block8" onclick="display('8')"></td>
-        <td><input type="button" value="9" id="block9" onclick="display('9')"></td>
-        <td><input type="button" value="*" id="multiply" onclick="display('*')"></td>
-    </tr>
-
-    <tr>
-        <td><input type="button" value="0" id="block0" onclick="display('0')"></td>
-        <td><input type="button" value="." id="dot" onclick="display('.')"></td>
-        <td><input type="button" value="=" id="ans" onclick="result()"></td>
-        <td><input type="button" value="/" id="divide" onclick="display('/')"></td>
-    </tr>
-</table>
-        <script src="script.js"></script>
-    </body>
-    </html>
+</html>
